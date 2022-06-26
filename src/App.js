@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import "./App.css";
+import Input from "./components/Input";
 
 function App() {
+
+  const InputRef = useRef();
+
+
+  const text = {
+    id: "textField",
+    label: "Name",
+    name: "textField",
+    type: "text",
+    value: "",
+    placeholder: "Enter Joe Name"
+  };
+  const password = {
+    id: "password",
+    label: "Password",
+    name: "password",
+    type: "password",
+    value: "",
+    placeholder: "Enter Joe Password"
+  };
+  const radio = {
+    id: "radio",
+    label: "Radio Option",
+    name: "radio",
+    type: "radio",
+    value: ""
+  };
+  const checkbox = {
+    id: "radio",
+    label: "Radio Option",
+    name: "radio",
+    type: "checkbox",
+    value: ""
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{fontFamily: 'Montserrat', display: "flex", flexDirection: 'column'}}>
+      <Input input={text} ref={InputRef} />
+      <Input input={password} ref={InputRef} />
+      <Input input={radio} ref={InputRef} />
+      <Input input={radio} ref={InputRef} />
+      <Input input={checkbox} ref={InputRef} />
     </div>
   );
 }
