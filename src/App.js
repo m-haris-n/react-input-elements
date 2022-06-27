@@ -1,11 +1,10 @@
 import { useRef } from "react";
 import "./App.css";
 import Input from "./components/Input";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
-
+function Home(props) {
   const InputRef = useRef();
-
 
   const text = {
     id: "textField",
@@ -13,7 +12,7 @@ function App() {
     name: "textField",
     type: "text",
     value: "",
-    placeholder: "Enter Joe Name"
+    placeholder: "Enter Joe Name",
   };
   const password = {
     id: "password",
@@ -21,31 +20,49 @@ function App() {
     name: "password",
     type: "password",
     value: "",
-    placeholder: "Enter Joe Password"
+    placeholder: "Enter Joe Password",
   };
   const radio = {
     id: "radio",
     label: "Radio Option",
     name: "radio",
     type: "radio",
-    value: ""
+    value: "",
   };
   const checkbox = {
     id: "radio",
     label: "Radio Option",
     name: "radio",
     type: "checkbox",
-    value: ""
+    value: "",
   };
 
   return (
-    <div style={{fontFamily: 'Montserrat', display: "flex", flexDirection: 'column'}}>
-      <Input input={text} ref={InputRef} />
-      <Input input={password} ref={InputRef} />
-      <Input input={radio} ref={InputRef} />
-      <Input input={radio} ref={InputRef} />
-      <Input input={checkbox} ref={InputRef} />
-    </div>
+    <>
+      <div
+        style={{
+          fontFamily: "Montserrat",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <Input input={text} ref={InputRef} />
+        <Input input={password} ref={InputRef} />
+        {/* <Input input={radio} ref={InputRef} /> */}
+        {/* <Input input={radio} ref={InputRef} /> */}
+        {/* <Input input={checkbox} ref={InputRef} /> */}
+      </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router basename={window.location.pathname || ""}>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
