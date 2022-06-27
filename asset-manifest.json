@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.651c76b4.css",
-    "main.js": "/static/js/main.92c2f3b1.js",
-    "static/js/787.c1fe50c9.chunk.js": "/static/js/787.c1fe50c9.chunk.js",
-    "index.html": "/index.html",
-    "main.651c76b4.css.map": "/static/css/main.651c76b4.css.map",
-    "main.92c2f3b1.js.map": "/static/js/main.92c2f3b1.js.map",
-    "787.c1fe50c9.chunk.js.map": "/static/js/787.c1fe50c9.chunk.js.map"
+    "main.css": "/react-input-elements/static/css/main.651c76b4.css",
+    "main.js": "/react-input-elements/static/js/main.2fa17441.js",
+    "static/js/787.c1fe50c9.chunk.js": "/react-input-elements/static/js/787.c1fe50c9.chunk.js",
+    "index.html": "/react-input-elements/index.html",
+    "main.651c76b4.css.map": "/react-input-elements/static/css/main.651c76b4.css.map",
+    "main.2fa17441.js.map": "/react-input-elements/static/js/main.2fa17441.js.map",
+    "787.c1fe50c9.chunk.js.map": "/react-input-elements/static/js/787.c1fe50c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.651c76b4.css",
-    "static/js/main.92c2f3b1.js"
+    "static/js/main.2fa17441.js"
   ]
 }
