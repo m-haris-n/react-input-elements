@@ -1,0 +1,54 @@
+h1, h2 {
+  font-weight: 500;
+}
+
+p, code {
+  font-size: 14pt;
+  line-height: 150%;
+}
+
+code {
+  background-color: #eeeeee;
+  padding: 5px;
+  border-radius: 5px;
+  color: #1372e7;
+
+}
+
+.code {
+  display: block;
+  padding: 10px 20px;
+  background-color: #eeeeee;
+  color: black;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  font-family: "Rubik";
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.container {
+  width: 50%;
+  height: auto;
+  border-right: 1px solid #949494;
+  border-left: 1px solid #949494;
+  padding: 15px;
+}
+
+@media  screen and (max-width: 1200px) {
+  .container{
+    width: 80%;
+  }
+}
+
+@media  screen and (max-width: 600px) {
+  .container{
+    width: 90%;
+  }
+}
