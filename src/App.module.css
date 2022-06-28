@@ -1,5 +1,8 @@
-h1, h2 {
+h1, h2, h3 {
   font-weight: 500;
+}
+h2 {
+  border-bottom: 1px solid #949494;
 }
 
 p, code {
@@ -8,9 +11,9 @@ p, code {
 }
 
 code {
-  background-color: #eeeeee;
+  background-color: #f1f1f1;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #1372e7;
 
 }
@@ -18,7 +21,7 @@ code {
 .code {
   display: block;
   padding: 10px 20px;
-  background-color: #eeeeee;
+  background-color: #f1f1f1;
   color: black;
 }
 
@@ -30,6 +33,8 @@ code {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: #fdfdfd;
+  
 }
 
 
@@ -39,16 +44,20 @@ code {
   border-right: 1px solid #949494;
   border-left: 1px solid #949494;
   padding: 15px;
+  background-color: white;
+
 }
 
 @media  screen and (max-width: 1200px) {
   .container{
     width: 80%;
+    margin-top: 56px;
   }
 }
 
 @media  screen and (max-width: 600px) {
   .container{
     width: 90%;
+    margin-top: 56px;
   }
 }

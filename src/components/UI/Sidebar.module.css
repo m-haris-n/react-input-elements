@@ -1,0 +1,31 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 50px;
+
+}
+
+.sidebar  a {
+    text-decoration: none;
+    color: black;
+    font-size: 14pt;
+    display: block;
+    
+    
+}
+.sidebar li {
+    font-size: 14pt;
+}
+
+.sidebar  li:hover {
+    font-weight: 550;
+    text-decoration: underline;
+
+}
+
+@media  screen and (max-width: 1200px) {
+    .sidebar{
+      display: none;
+    }
+  }
