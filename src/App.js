@@ -22,6 +22,18 @@ function Home(props) {
       text: "Password Field",
       id: "#pwField",
     },
+    {
+      text: "Email Field",
+      id: "#email-field",
+    },
+    {
+      text: "Search Field",
+      id: "#search-field",
+    },
+    {
+      text: "Tel Field",
+      id: "#tel-field",
+    },
   ];
 
   const text = {
@@ -40,10 +52,35 @@ function Home(props) {
     value: "",
     placeholder: "Enter Joe Password",
   };
+  const email = {
+    id: "email",
+    label: "Email ID",
+    name: "email",
+    type: "email",
+    value: "",
+    placeholder: "you@example.com",
+  };
+  const search = {
+    id: "search",
+    label: "Search",
+    name: "search",
+    type: "search",
+    value: "",
+    placeholder: "Search",
+  };
+  const tel = {
+    id: "tel",
+    label: "Phone Number",
+    name: "tel",
+    type: "tel",
+    value: "",
+    placeholder: "Your Number",
+    pattern: "[0-9]{3}-[0-9]{2}-[0-9]{3}"
+  };
 
   return (
     <>
-      <MobileNav list={sideBarProps}/>
+      <MobileNav list={sideBarProps} />
       <Sidebar list={sideBarProps} />
       <div className={classes.wrapper}>
         <div className={classes.container}>
@@ -118,14 +155,14 @@ function Home(props) {
             <Input input={text} ref={InputRef} />
           </div>
           <div>
-            <h2>Password Field</h2>
+            <h2 id="pwField">Password Field</h2>
             <h3>
               <code>
                 <b>props</b>
               </code>
             </h3>
             <code className={classes.code}>
-              const text = &#123; <br />
+              const password = &#123; <br />
               id: "password", <br />
               label: "Password",
               <br />
@@ -138,10 +175,91 @@ function Home(props) {
             </code>
             <h3>Code</h3>
             <code className={classes.code}>
-              &lt;Input input=&#123;text&#125; input=&#123;yourRef&#125; /&gt;
+              &lt;Input input=&#123;password&#125; input=&#123;yourRef&#125;
+              /&gt;
             </code>
             <h3>Result</h3>
             <Input input={password} ref={InputRef} />
+          </div>
+          <div>
+            <h2 id="email-field">Email Field</h2>
+            <h3>
+              <code>
+                <b>props</b>
+              </code>
+            </h3>
+            <code className={classes.code}>
+              const email = &#123; <br />
+              id: "email", <br />
+              label: "Email ID",
+              <br />
+              name: "email",
+              <br />
+              type: "email", <br />
+              value: "", <br />
+              placeholder: "you@example.com",
+              <br /> &#125;;
+            </code>
+            <h3>Code</h3>
+            <code className={classes.code}>
+              &lt;Input input=&#123;email&#125; input=&#123;yourRef&#125; /&gt;
+            </code>
+            <h3>Result</h3>
+            <Input input={email} ref={InputRef} />
+          </div>
+          <div>
+            <h2 id="search-field">Search Field</h2>
+            <h3>
+              <code>
+                <b>props</b>
+              </code>
+            </h3>
+            <code className={classes.code}>
+              const search = &#123; <br />
+              id: "search", <br />
+              label: "Search",
+              <br />
+              name: "search",
+              <br />
+              type: "search", <br />
+              value: "", <br />
+              placeholder: "Search",
+              <br /> &#125;;
+            </code>
+            <h3>Code</h3>
+            <code className={classes.code}>
+              &lt;Input input=&#123;search&#125; input=&#123;yourRef&#125; /&gt;
+            </code>
+            <h3>Result</h3>
+            <Input input={search} ref={InputRef} />
+          </div>
+          <div>
+            <h2 id="tel-field">Tel Field</h2>
+            <h3>
+              <code>
+                <b>props</b>
+              </code>
+            </h3>
+            <code className={classes.code}>
+              const tel = &#123; <br />
+              id: "tel", <br />
+              label: "Phone Number",
+              <br />
+              name: "tel",
+              <br />
+              type: "tel", <br />
+              value: "", <br />
+              placeholder: "Your Number",
+              <br />
+              pattern:"[0-9]&#123;3&#125;-[0-9]&#123;2&#125;-[0-9]&#123;3&#125;"
+              <br /> &#125;;
+            </code>
+            <h3>Code</h3>
+            <code className={classes.code}>
+              &lt;Input input=&#123;email&#125; input=&#123;yourRef&#125; /&gt;
+            </code>
+            <h3>Result</h3>
+            <Input input={tel} ref={InputRef} />
           </div>
         </div>
       </div>

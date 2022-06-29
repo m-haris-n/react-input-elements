@@ -1,9 +1,9 @@
 .navbar {
-    display: none;
+  display: none;
 }
 
-@media  screen and (max-width: 1200px) {
-    .navbar{
-      display: block;
-    }
+@media screen and (max-width: 1200px) {
+  .navbar {
+    display: block;
   }
+}

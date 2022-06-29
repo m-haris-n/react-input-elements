@@ -1,11 +1,15 @@
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 500;
 }
 h2 {
   border-bottom: 1px solid #949494;
+  margin: 10px 0px;
 }
 
-p, code {
+p,
+code {
   font-size: 14pt;
   line-height: 150%;
 }
@@ -15,7 +19,6 @@ code {
   padding: 5px;
   border-radius: 3px;
   color: #1372e7;
-
 }
 
 .code {
@@ -23,6 +26,7 @@ code {
   padding: 10px 20px;
   background-color: #f1f1f1;
   color: black;
+  margin: 10px 0px;
 }
 
 .wrapper {
@@ -34,9 +38,7 @@ code {
   justify-content: flex-start;
   align-items: center;
   background-color: #fdfdfd;
-  
 }
-
 
 .container {
   width: 50%;
@@ -45,18 +47,17 @@ code {
   border-left: 1px solid #949494;
   padding: 15px;
   background-color: white;
-
 }
 
-@media  screen and (max-width: 1200px) {
-  .container{
+@media screen and (max-width: 1200px) {
+  .container {
     width: 80%;
     margin-top: 56px;
   }
 }
 
-@media  screen and (max-width: 600px) {
-  .container{
+@media screen and (max-width: 600px) {
+  .container {
     width: 90%;
     margin-top: 56px;
   }

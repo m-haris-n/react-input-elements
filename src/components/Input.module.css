@@ -23,7 +23,10 @@
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"] {
   height: 35px;
 
   font-size: 14pt;
@@ -37,7 +40,10 @@ input[type="password"] {
 }
 
 input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus {
   border-color: rgb(29, 55, 222);
   background-color: rgba(97, 176, 255, 0.301);
 }
@@ -57,7 +63,7 @@ input[type="password"]:focus {
   z-index: 9;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: rgb(238, 238, 238);
   border-radius: 50%;
 }
 

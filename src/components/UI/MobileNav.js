@@ -4,7 +4,9 @@ export default function MobileNav(props) {
   const sideBarProps = [...props.list];
   const sideBarLinks = sideBarProps.map((link) => (
     <li>
-      <a className="dropdown-item" href={link.id}>{link.text}</a>
+      <a className="dropdown-item" href={link.id}>
+        {link.text}
+      </a>
     </li>
   ));
   return (
